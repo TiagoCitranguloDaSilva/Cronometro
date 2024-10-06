@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --corFundo: #2a2a2a;
+}
+
+body{
+    font-family: "Wallpoet", Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--corFundo);
+}
+
+main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    position: relative;
+    max-width: 1200px;
+}
+
+#conometroContainer{
+    background-color: rgb(15, 15, 15);
+    width: 40em;
+    height: 18em;
+    border: 1.6em solid rgb(32, 32, 32);
+    border-radius: .5em;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#visor{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#valores{
+    color: green;
+    font-size: 4.5rem;
+}
+
+#botoesContainer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-right: 3em;
+    gap: 2em;
+    position: absolute;
+    top: 0;
+    transform: translateY(-100%);
+}
+
+#botoesContainer button{
+    width: 5em;
+    height: 2.5em;
+    border-width: 3px;
+    border-style: solid;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    border-bottom: none;
+    border-radius: .5em .5em 0 0;
+    cursor: pointer;
+}
+
+#comecar{
+    background-color: #00a700;
+    color: white;
+    border-color: rgb(0, 72, 0);
+}
+
+#parar{
+    background-color: #fd1919;
+    border-color: darkred;
+    color: white;
+}
+
+#comecar:hover{
+    /* height: 2.6em; */
+    background-color: #02c802;
+    transition: .3s;
+}
+
+#parar:hover{
+    background-color: #fb3d3d;
+    transition: .3s;
+}
+
+.clicado{
+    /* font-size: 0; */
+    color: rgba(0, 0, 0, 0);
+    transform: translateY(20%) scaleY(.6);
+    height: 2em;
+    transition: .2s;
+}
+
+.clicado p{
+    display: none;
+}
