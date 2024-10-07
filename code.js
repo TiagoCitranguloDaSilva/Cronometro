@@ -11,11 +11,12 @@ var interval;
 var paradaForcada = false
 
 function start(){
-    document.getElementById("comecar").classList.toggle("clicado")
-    if(document.getElementById("parar").classList.contains("clicado")){
-        document.getElementById("parar").classList.toggle("clicado")
-    }
     if(!paradaForcada){
+        document.getElementById("comecar").classList.toggle("clicado")
+        
+        if(document.getElementById("parar").classList.contains("clicado")){
+            document.getElementById("parar").classList.toggle("clicado")
+        }
         interval = setInterval(() => {
             miliseg++
             
